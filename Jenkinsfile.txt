@@ -8,7 +8,7 @@ pipeline {
                     sh '''
                     ssh -o StrictHostKeyChecking=no ubuntu@52.91.162.178 <<EOF
 if [ ! -d "repo" ]; then
-    git clone https://github.com/Precious-Sowunmi1/IC9Repo.git
+    git clone https://github.com/Precious-Sowunmi1/IC9Repo.git repo
 else
     echo "Repository already exists."
     cd repo
